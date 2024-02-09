@@ -1,0 +1,35 @@
+
+.complaints-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .complaints-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .complaints-form-container form textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .complaints-form-container form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .complaints-form-container form button:hover {
+    background-color: #0056b3;
+  }
+  

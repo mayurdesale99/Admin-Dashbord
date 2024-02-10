@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css'; 
 
 import App from './App';
-import AdminRequest from './Components/AdminRequest';
+import AdminReq from './Components/AdminReq';
 import Housekeeper from './Components/Housekeeper';
 import Student from './Components/Student';
 import Feedback from './Components/Feedback';
@@ -19,7 +19,7 @@ const Sidebar = () => {
   
       <div className="navbar">
         <Link to="/Dashboard">Dashboard</Link>
-        <Link to="/AdminRequest">AdminRequest</Link>  
+        <Link to="/AdminReq">AdminReq</Link>  
         <Link to="/Housekeeper">Housekeeper</Link> 
         <Link to="/Student">Student</Link> 
         <Link to="/Feedback">Feedback</Link> 
@@ -42,7 +42,7 @@ const routing = (
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/AdminRequest" element={<AdminRequest />} /> 
+          <Route path="/AdminReq" element={<AdminReq />} /> 
           <Route path="/Housekeeper" element={<Housekeeper />} />
           <Route path="/Student" element={<Student />} />
           <Route path="/Feedback" element={<Feedback />} />

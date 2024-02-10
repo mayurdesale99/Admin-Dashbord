@@ -1,32 +1,58 @@
+import React from 'react';
+import "./Student.css";
 
-import React, { useState } from 'react';
-import './Student.css';
-
-function Student() {
-  // State to hold the list of students and their respective room numbers
-  const [students, setStudents] = useState([
-    { name: 'John Doe', roomNumber: '101' },
-    { name: 'Jane Smith', roomNumber: '102' },
-    { name: 'David Johnson', roomNumber: '103' },
-    // Add more students as needed
-  ]);
+const Student = ( {}) => {
+    const data = [
+        {
+          reqid: 1, date:'2024-02-09',timings:  '10:00 AM',reqs: 'Cleaning', hid: 'HK123', status: 'Active',
+        },
+        {
+            reqid: 2, date:'2024-02-09',timings:  '10:00 AM',reqs: 'Cleaning', hid: 'HK123', status: 'Pending',
+          },
+          {
+            reqid: 3, date:'2024-02-09',timings:  '10:00 AM',reqs: 'Cleaning', hid: 'HK123', status: 'Active',
+          },
+          {
+            reqid: 4, date:'2024-02-09',timings:  '10:00 AM',reqs: 'Cleaning', hid: 'HK123', status: 'Pending',
+          },
+          {
+            reqid: 5, date:'2024-02-09',timings:  '10:00 AM',reqs: 'Cleaning', hid: 'HK123', status: 'Active',
+          },
+        
+      ];
 
   return (
-    <div className="Student">
-
-      <div className="student-list">
-        <h2>Student List</h2>
-        <ul>
-          {students.map((student, index) => (
-            <li key={index}>
-              <span className="student-name">{student.name}</span>
-              <span className="room-number">Room: {student.roomNumber}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+   <div className='container'>
+    <div className= "inner-container" >
+        <h3>status of studentslist</h3>
+    <table  border={1}>
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Date</th> 
+          <th>Timings</th>
+          <th>Requirements</th>
+          <th>Housekeeper ID</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row, index) => (
+          <tr key={index}>
+            <td>{row.reqid}</td>
+            <td>{row.date}</td>
+            <td>{row.timings}</td>
+            <td>{row.reqs}</td>
+            <td>{row.hid}</td>
+            <td>{row.status}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
     </div>
+    </div>
+    
   );
-}
+};
 
 export default Student;

@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./AdminRequest.css";
+import "./AdminRequest.css";
 
 const AdminRequest = ( {}) => {
     const data = [

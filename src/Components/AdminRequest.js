@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Request.css";
+// import "./AdminRequest.css";
 
-const Request = ( {}) => {
+const AdminRequest = ( {}) => {
     const data = [
         {
           reqid: 1,studname:'Mayur' ,dateandtime:'2024-02-09 10:00Am',roomno:  '101',floorno:  '1', reqs: 'Cleaning, Mopping, Dusting.', status: 'completed', allocation: <div> <img src="images/Plus.png"  width="20" /> Allocate | <img src="images/Tik.png"  width="20" /> Completed </div>,
@@ -59,4 +59,4 @@ const Request = ( {}) => {
   );
 };
 
-export default Request;
+export default AdminRequest;
